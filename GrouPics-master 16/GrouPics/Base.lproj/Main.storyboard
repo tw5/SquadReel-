@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Events View Controller-->
+        <scene sceneID="jxU-Sc-7do">
+            <objects>
+                <viewController storyboardIdentifier="eventsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Od6-mp-lKy" customClass="EventsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8J1-Lq-Cfy"/>
+                        <viewControllerLayoutGuide type="bottom" id="men-Rz-zaf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cZ7-80-Fk9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="VIEW YOUR EVENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB1-zk-41j">
+                                <rect key="frame" x="0.0" y="64" width="495" height="58"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.36003605769230773" green="0.05366131407041113" blue="0.060548138944617497" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93067869489252453" blue="0.88952496641672041" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IB1-zk-41j" firstAttribute="centerX" secondItem="cZ7-80-Fk9" secondAttribute="centerX" id="QmS-T0-rmJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pg5-9X-qnJ"/>
+                    <connections>
+                        <segue destination="216-eK-rzz" kind="show" id="Bs8-NI-5iq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KM2-pK-Z8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="1907"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="Fwy-mf-DHK">
+            <objects>
+                <viewController storyboardIdentifier="eventView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="216-eK-rzz" customClass="EventViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ax-J4-tDt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sl2-pS-nP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T6E-Td-91k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27844551282051277" green="0.27844551282051277" blue="0.27844551282051277" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2784313725" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="urM-ec-qfJ" kind="show" id="Efe-24-HQQ"/>
+                        <segue destination="KZS-CH-Z1b" kind="show" id="Gch-gi-YOt"/>
+                        <segue destination="jvw-m2-134" kind="show" id="g65-JP-jaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYW-pN-TZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-358" y="2702"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="OvH-QO-Dkh">
+            <objects>
+                <viewController storyboardIdentifier="pictureView" id="KZS-CH-Z1b" customClass="PictureViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bgk-DJ-F5t"/>
+                        <viewControllerLayoutGuide type="bottom" id="I0j-sK-i2n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HwB-k4-Tab">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qy2-BB-AG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="3475"/>
+        </scene>
+        <!--Event Upload View Controller-->
+        <scene sceneID="Unr-jg-qQf">
+            <objects>
+                <viewController storyboardIdentifier="eventUploadView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="urM-ec-qfJ" customClass="EventUploadViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X29-Ep-IPo"/>
+                        <viewControllerLayoutGuide type="bottom" id="rBo-SV-gHF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LZw-DQ-gO4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0h-fV-9x8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="2684"/>
+        </scene>
+        <!--Search Events View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController storyboardIdentifier="searchEventsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SearchEventsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="JOIN NEW EVENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-qf-crU">
+                                <rect key="frame" x="53" y="64" width="495" height="58"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.044530795942500187" green="0.27159455128205123" blue="0.12290788016100358" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95577759430876563" green="1" blue="0.93795762038552388" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PAT-qf-crU" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="0zQ-KV-VHN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u2e-uJ-8nj"/>
+                    <connections>
+                        <segue destination="QNP-hW-ql9" kind="show" id="RTc-Dg-3KD"/>
+                        <segue destination="ind-ZX-32c" kind="show" id="YAA-si-j6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="786"/>
+        </scene>
+        <!--Event Details View Controller-->
+        <scene sceneID="1NX-Kr-Oav">
+            <objects>
+                <viewController storyboardIdentifier="eventDetailsView" id="QNP-hW-ql9" customClass="EventDetailsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2nr-EN-uy6"/>
+                        <viewControllerLayoutGuide type="bottom" id="n5s-aA-bte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ntP-wz-0zG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14014423079999999" green="0.14014423079999999" blue="0.14014423079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbB-QC-JaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="786"/>
+        </scene>
+        <!--Create View Controller-->
+        <scene sceneID="h3t-Y5-AHp">
+            <objects>
+                <viewController storyboardIdentifier="createView1" id="oXo-5M-7Ko" customClass="CreateViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67b-AV-CXT"/>
+                        <viewControllerLayoutGuide type="bottom" id="xpO-EJ-gO0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAy-YB-bjd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CREATE AN EVENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-la-mga">
+                                <rect key="frame" x="40" y="64" width="495" height="58"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.12423239236545053" green="0.28758213783352737" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91079539984176472" green="0.93731808152508056" blue="0.94379908376963351" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0jp-la-mga" firstAttribute="centerX" secondItem="sAy-YB-bjd" secondAttribute="centerX" id="SZT-0e-Ub1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mVO-jb-9Lz"/>
+                    <connections>
+                        <segue destination="o5d-gJ-V3b" kind="show" id="qfE-e2-VBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTR-Uy-ssc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-98"/>
+        </scene>
+        <!--Create2 View Controller-->
+        <scene sceneID="43S-zK-Sky">
+            <objects>
+                <viewController storyboardIdentifier="createView2" id="o5d-gJ-V3b" customClass="Create2ViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aSK-fF-811"/>
+                        <viewControllerLayoutGuide type="bottom" id="UPP-zt-QYq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8o1-XN-4m5" customClass="create">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="When will your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-uJ-5Ok">
+                                <rect key="frame" x="40" y="95" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="event finish?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-Am-ZYg">
+                                <rect key="frame" x="7" y="144" width="495" height="30"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91079539980000002" green="0.93731808149999996" blue="0.94379908379999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qF6-uJ-5Ok" firstAttribute="centerX" secondItem="8o1-XN-4m5" secondAttribute="centerX" id="b3b-Mi-pIl"/>
+                            <constraint firstItem="4Td-Am-ZYg" firstAttribute="centerX" secondItem="8o1-XN-4m5" secondAttribute="centerX" id="wI1-Mq-aQh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="UV8-JH-jg8" kind="show" id="9Pd-N5-pfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jn-CO-9eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="-98"/>
+        </scene>
+        <!--Create4 View Controller-->
+        <scene sceneID="wNi-vs-oWI">
+            <objects>
+                <viewController storyboardIdentifier="createView4" id="qFh-aa-oDG" customClass="Create4ViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iad-Cd-F63"/>
+                        <viewControllerLayoutGuide type="bottom" id="BDa-DL-ftw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gov-SN-ibJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Make your Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR1-yg-kAu">
+                                <rect key="frame" x="0.0" y="93" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Secure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCA-VZ-3tm">
+                                <rect key="frame" x="0.0" y="132" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91079539980000002" green="0.93731808149999996" blue="0.94379908379999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aR1-yg-kAu" firstAttribute="centerX" secondItem="Gov-SN-ibJ" secondAttribute="centerX" id="DLg-gd-sE0"/>
+                            <constraint firstItem="aCA-VZ-3tm" firstAttribute="centerX" secondItem="Gov-SN-ibJ" secondAttribute="centerX" id="trz-N2-ntA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="lBf-Nr-CuT" kind="show" id="F9S-7r-Qj6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykf-Lz-6UV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3772" y="-98"/>
+        </scene>
+        <!--Create5 View Controller-->
+        <scene sceneID="XVr-sp-nyB">
+            <objects>
+                <viewController storyboardIdentifier="createView5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lBf-Nr-CuT" customClass="Create5ViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9JF-8E-Xrw"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Vp-Za-jtE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Lk-Qw-D4F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Upload an Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAj-jn-sxX">
+                                <rect key="frame" x="7" y="95" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cover Photo?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0x-Kb-0qq">
+                                <rect key="frame" x="7" y="140" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91079539980000002" green="0.93731808149999996" blue="0.94379908379999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XAj-jn-sxX" firstAttribute="centerX" secondItem="5Lk-Qw-D4F" secondAttribute="centerX" id="In3-Ro-YLP"/>
+                            <constraint firstItem="Q0x-Kb-0qq" firstAttribute="centerX" secondItem="5Lk-Qw-D4F" secondAttribute="centerX" id="TF9-aX-Nit"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlK-mh-SDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4512" y="-98"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="tabView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PAm-i0-1Mz" kind="relationship" relationship="viewControllers" id="A9d-nP-b4v"/>
+                        <segue destination="96L-Gq-QsZ" kind="relationship" relationship="viewControllers" id="CWa-rP-vyP"/>
+                        <segue destination="ijh-2f-2To" kind="relationship" relationship="viewControllers" id="OR6-pX-Atz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="4"/>
+        </scene>
+        <!--Albums-->
+        <scene sceneID="x3C-7R-0U4">
+            <objects>
+                <viewController id="WJj-uX-esU" customClass="AlbumsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x2b-Rs-RB9"/>
+                        <viewControllerLayoutGuide type="bottom" id="rst-8T-ae5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWK-qC-eLs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8CN-el-GuX">
+                                <rect key="frame" x="32" y="90" width="240" height="374"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT2-Jo-lSD">
+                                        <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MT2-Jo-lSD" firstAttribute="centerX" secondItem="8CN-el-GuX" secondAttribute="centerX" id="6Zr-Bi-6we"/>
+                                    <constraint firstItem="MT2-Jo-lSD" firstAttribute="centerY" secondItem="8CN-el-GuX" secondAttribute="centerY" id="rjB-vW-Bv2"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Albums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUR-lF-vui">
+                                <rect key="frame" x="47" y="85" width="495" height="58"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.36085737179487176" green="0.0095449915272686845" blue="0.033782097604204503" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95237120355356575" blue="0.93552211100220672" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XUR-lF-vui" firstAttribute="centerX" secondItem="BWK-qC-eLs" secondAttribute="centerX" id="cJh-rj-jg7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Albums" image="album" id="utz-fO-Xie"/>
+                    <connections>
+                        <outlet property="ScrollView" destination="8CN-el-GuX" id="nmG-Sh-VsE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oib-C1-Azd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="-855"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="5ws-9V-q3P">
+            <objects>
+                <navigationController storyboardIdentifier="navView" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ijh-2f-2To" customClass="EventsNavigationController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Events" image="balloons" id="mRj-ZQ-1cw">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.89148637820512822" green="0.16280583636278276" blue="0.11468395070905037" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fjF-60-Opz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Od6-mp-lKy" kind="relationship" relationship="rootViewController" id="NhP-37-TuF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVu-l2-Kq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="1067"/>
+        </scene>
+        <!--Create-->
+        <scene sceneID="Gmi-ER-ndd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PAm-i0-1Mz" customClass="CreateNavController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Create" image="plus" id="vP4-0h-LzD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mkx-PQ-st6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oXo-5M-7Ko" kind="relationship" relationship="rootViewController" id="vXT-1U-mrg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-2X-cry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-98"/>
+        </scene>
+        <!--Create3 View Controller-->
+        <scene sceneID="6YH-Vc-NzN">
+            <objects>
+                <viewController storyboardIdentifier="createView3" id="UV8-JH-jg8" customClass="Create3ViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zWF-31-5XU"/>
+                        <viewControllerLayoutGuide type="bottom" id="OMB-bL-6jl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O18-hJ-AGb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Where is your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1O-pr-GxZ">
+                                <rect key="frame" x="0.0" y="93" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Event located?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoG-Az-2lp">
+                                <rect key="frame" x="0.0" y="132" width="445" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.1242323924" green="0.28758213780000003" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.21743424689999999" blue="0.78518389509999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91079539980000002" green="0.93731808149999996" blue="0.94379908379999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UoG-Az-2lp" firstAttribute="centerX" secondItem="O18-hJ-AGb" secondAttribute="centerX" id="6KW-b4-yER"/>
+                            <constraint firstItem="q1O-pr-GxZ" firstAttribute="centerX" secondItem="O18-hJ-AGb" secondAttribute="centerX" id="kyy-Z6-0KJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="qFh-aa-oDG" kind="show" id="Dkt-Z9-sHu"/>
+                        <segue destination="Giu-Kl-NR0" kind="show" id="hvl-MN-sRR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAu-4T-Eqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3094" y="-98"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="AK9-YA-nyV">
+            <objects>
+                <viewController storyboardIdentifier="mapsView" id="Giu-Kl-NR0" customClass="MapsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eKO-YK-mmI"/>
+                        <viewControllerLayoutGuide type="bottom" id="dGj-UC-Jtp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DmW-mG-Rji">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91079539980000002" green="0.93731808149999996" blue="0.94379908379999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otG-Rn-D65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3314" y="-1006"/>
+        </scene>
+        <!--Join-->
+        <scene sceneID="nzI-sj-gSF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96L-Gq-QsZ" customClass="SearchEventsNavigationController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Join" image="magnifying" id="puO-RG-hvn">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.18269425630569458" green="0.76415163278579712" blue="0.078016482293605804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LGq-X5-5ic">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="DNS-Dz-Y2T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7B-Qn-wrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="786"/>
+        </scene>
+        <!--Search Names View Controller-->
+        <scene sceneID="EUE-JQ-ovY">
+            <objects>
+                <viewController storyboardIdentifier="searchNamesView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ind-ZX-32c" customClass="SearchNamesViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nti-ci-FJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="emM-98-qHE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Wf-cb-VIg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95577759429999998" green="1" blue="0.93795762039999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zUO-4P-Jmi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8Q-ED-RRb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="1616"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Mp9-rd-1GQ">
+            <objects>
+                <viewController storyboardIdentifier="settingsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jvw-m2-134" customClass="SettingsViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qd3-uh-m1x"/>
+                        <viewControllerLayoutGuide type="bottom" id="lPA-kJ-2y7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZU3-MB-F6k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27844551280000002" green="0.27844551280000002" blue="0.27844551280000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2784313725" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MnU-mq-Ph8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="3446"/>
+        </scene>
+        <!--Edit Cover Photo View Controller-->
+        <scene sceneID="55p-Y9-rRf">
+            <objects>
+                <viewController storyboardIdentifier="editCoverPhotoView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7a9-nH-lNG" customClass="EditCoverPhotoViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wev-Tb-Lyw"/>
+                        <viewControllerLayoutGuide type="bottom" id="wJI-fW-ygi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WgC-iU-0Ec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27844551280000002" green="0.27844551280000002" blue="0.27844551280000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2784313725" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7f-Wo-pPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1766" y="4318"/>
+        </scene>
+        <!--Edit Password View Controller-->
+        <scene sceneID="d76-SJ-MnD">
+            <objects>
+                <viewController storyboardIdentifier="editPasswordView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KeV-ws-nQD" customClass="EditPasswordViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9TQ-vP-Lgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="67t-cf-MlN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mxx-SI-paB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27844551280000002" green="0.27844551280000002" blue="0.27844551280000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2784313725" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjx-28-Xud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-982" y="4334"/>
+        </scene>
+        <!--Edit Time View Controller-->
+        <scene sceneID="hdO-aR-pE7">
+            <objects>
+                <viewController storyboardIdentifier="editTimeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IAZ-DU-uce" customClass="EditTimeViewController" customModule="GrouPics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iPw-jM-7VB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ReM-aK-oU8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="anV-mJ-4Pw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27844551280000002" green="0.27844551280000002" blue="0.27844551280000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2784313725" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xk-Sv-Rxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="4308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album" width="25" height="25"/>
+        <image name="balloons" width="25" height="25"/>
+        <image name="magnifying" width="25" height="25"/>
+        <image name="plus" width="25" height="25"/>
+    </resources>
+</document>
